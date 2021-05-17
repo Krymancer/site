@@ -1,0 +1,426 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --dark-background: #040b14;
+  --light-background: #ffffff;
+  --light-blue-background: #f5f8fd;
+  --light-blue-highlight: #149ddd;
+  --light-text-color: #fff;
+  --dark-text-color: #173b6c;
+  --menu-background-hover: rgba(255, 255, 255, 0.1);
+  --menu-text-color: rgba(205, 205, 212, 0.8);
+  --menu-text-highlight: #149ddd;
+  --social-links: #212431;
+  --social-links-highlight: #149ddd;
+
+  --scroll-bar-track-color: rgba(0, 0, 0, 0.1);
+  --scroll-bar-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  overflow: overlay;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: var(--scroll-bar-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-background);
+  height: 100vh;
+  position: fixed;
+
+  width: 300px;
+}
+
+/* Avatar */
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.avatar-image {
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+}
+
+.avatar-name {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* Social */
+.social {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--social-links);
+
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+  background-color: var(--social-links-highlight);
+}
+
+.social-item > a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.navbar > div {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-text-color);
+}
+
+.navbar-menu {
+  display: flex;
+  margin-top: 2em;
+}
+
+.navbar-menu-item {
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin-bottom: 0.5 em;
+  padding-left: 1em;
+}
+
+.navbar-menu-item {
+  color: var(--menu-text-color);
+  text-decoration: none;
+  justify-content: flex-start;
+}
+
+.navbar-menu-item-text {
+  font-size: 0.7em;
+  margin-left: 1em;
+}
+
+.navbar-menu-item:hover {
+  background-color: var(--menu-background-hover);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.menu-active > svg,
+.navbar-menu-item:hover > svg {
+  color: var(--menu-text-highlight);
+  transition: 1s;
+}
+
+.navbar-menu-item:hover > span {
+  color: var(--light-text-color);
+  transition: 1s;
+}
+
+/*--------------------------------------------------------------
+#  Sections
+--------------------------------------------------------------*/
+
+.main {
+  margin-left: 300px;
+}
+
+.section {
+  background: var(--light-background);
+  padding: 5em;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  color: #173b6c;
+}
+.section-title::after {
+  margin-top: 0.3em;
+  content: "";
+  display: block;
+  width: 2em;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+.home {
+  display: flex;
+  background-image: url("../assets/home-bg.png");
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 30vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-name {
+  color: var(--light-text-color);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.home-label {
+  color: var(--light-text-color);
+}
+
+.home-label-text,
+.typed-cursor {
+  font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about {
+  height: 100%;
+}
+
+.about-container {
+  display: flex;
+  margin-top: 2em;
+}
+
+.about-avatar {
+  width: 15em;
+  height: 15em;
+}
+
+.about-details {
+  width: 100%;
+  padding-left: 2em;
+}
+
+.about-details-title {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: var(--dark-text-color);
+}
+
+.about-details-list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-details-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 5em;
+}
+
+.about-details-list > li {
+  margin-bottom: 2em;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+.skills {
+  background: var(--light-blue-background);
+
+  height: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skills-stack-container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.stack-container {
+  width: 100%;
+  padding: 2em;
+  padding-left: 0;
+  margin-right: 1em;
+}
+
+.stack-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  color: #173b6c;
+  margin-top: 0;
+}
+
+.stack-title::after {
+  margin-top: 0.3em;
+  content: "";
+  display: block;
+  width: 2em;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+}
+
+.progress {
+  width: 100%;
+  padding: 1em;
+}
+
+.progress-container {
+  background-color: #dce8f8;
+  height: 0.5em;
+}
+
+.skill-percentage {
+  float: right;
+  font-style: normal;
+}
+
+.skill-bar {
+  width: var(--percentage);
+  height: 0.5em;
+  background-color: var(--light-blue-highlight);
+  animation: progressbar 3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.play {
+  animation-play-state: running;
+}
+
+@keyframes progressbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--percentage);
+  }
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #050d18;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.resume-container > div {
+  margin-bottom: 5em;
+  width: 100%;
+}
+
+.resume-item {
+  padding: 0 0 1em 1em;
+  margin-top: 1em;
+  border-left: 2px solid #1f5297;
+  position: relative;
+  margin-bottom: -2em;
+}
+
+.resume-item h4 {
+  line-height: 1em;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #050d18;
+  margin-bottom: 1em;
+}
+
+.resume-item h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.8em;
+  background: #e4edf9;
+  padding: 0.5em 1em;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -0.55em;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/main.css"
+    />
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="avatar-container">
+        <img
+          class="avatar-image"
+          src="https://avatars.githubusercontent.com/krymancer"
+        />
+        <h1 class="avatar-name">Júnior Nascimento</h1>
+        <div class="social">
+          <div class="social-item">
+            <a href="#"> <i class="iconify" data-icon="bx-bxl-github"></i></a>
+          </div>
+          <div class="social-item">
+            <a href="#"> <i class="iconify" data-icon="bx-bxl-twitter"></i></a>
+          </div>
+          <div class="social-item">
+            <a href="#"> <i class="iconify" data-icon="bx-bxl-linkedin"></i></a>
+          </div>
+          <div class="social-item">
+            <a href="#">
+              <i class="iconify" data-icon="bx-bxl-instagram"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a href="#"> <i class="iconify" data-icon="bx-bxl-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="navbar-menu">
+        <a href="#home" class="navbar-menu-item menu-active">
+          <i class="iconify" data-icon="bx-bx-home"></i>
+          <span class="navbar-menu-item-text">Home</span>
+        </a>
+        <a href="#about" class="navbar-menu-item">
+          <i class="iconify" data-icon="bx-bx-user"></i>
+          <span class="navbar-menu-item-text">Sobre</span>
+        </a>
+
+        <a href="#skills" class="navbar-menu-item">
+          <i class="iconify" data-icon="mdi:align-horizontal-left"></i>
+          <span class="navbar-menu-item-text">Habilidades</span>
+        </a>
+
+        <a href="#resume" class="navbar-menu-item">
+          <i class="iconify" data-icon="bx-bx-file-blank"></i>
+          <span class="navbar-menu-item-text">Curriculo</span>
+        </a>
+        <a href="#portfolio" class="navbar-menu-item">
+          <i class="iconify" data-icon="bx-bx-book-content"></i>
+          <span class="navbar-menu-item-text">Portfolio</span>
+        </a>
+        <a href="#contact" class="navbar-menu-item">
+          <i class="iconify" data-icon="bx-bx-envelope"></i>
+          <span class="navbar-menu-item-text">Contato</span>
+        </a>
+      </div>
+    </header>
+    <!-- End Navbar -->
+
+    <div class="main">
+      <section id="home" class="home">
+        <span class="home-name">Júnior Nascimento</span>
+        <div class="home-label">
+          <span class="home-label-text"></span>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2 class="section-title">Sobre</h2>
+
+        <p class="about-description">
+          Eu sou um programador e um futuro engenheiro da computação. Apaixonado
+          por inteligência artificial e ciência. Em busca de aperfeiçoar minhas
+          experiências profissionais.
+        </p>
+
+        <div class="about-container">
+          <div data-aos="fade-right" class="about-avatar-container">
+            <img
+              class="about-avatar"
+              src="https://avatars.githubusercontent.com/krymancer"
+            />
+          </div>
+          <div data-aos="fade-left" class="about-details">
+            <h3 class="about-details-title">
+              Desenvolvedor Full Stack & Web Desinger
+            </h3>
+
+            <div class="about-details-list-container">
+              <ul class="about-details-list">
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Idade:</strong>
+                  <span>21 anos</span>
+                </li>
+
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Email:</strong>
+                  <span>junior.nascm@gmail.com</span>
+                </li>
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Cidade:</strong>
+                  <span>Sobral</span>
+                </li>
+              </ul>
+              <ul class="about-details-list">
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Telefone:</strong>
+                  <span>+55 (88) 99630-2439</span>
+                </li>
+
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Escolaridade:</strong>
+                  <span>Graduando em Eng. de Computação pela UFC</span>
+                </li>
+                <li>
+                  <i class="iconify" data-icon="bi-chevron-right"></i>
+                  <strong>Mudança de Endereço:</strong>
+                  <span>Disponivél</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <h2 class="section-title">Habilidades</h2>
+        <p>
+          Algumas das habilidades que possuo que achei relevante ressaltar,
+          devido a familiaridade por utilizar estas em meus projetos.
+        </p>
+
+        <div class="skills-container">
+          <div class="skills-stack-container">
+            <div class="stack-container">
+              <h3 class="stack-title">FrontEnd</h3>
+              <div class="progress">
+                <span>HTML<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>CSS<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Sass<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>React.js<i class="skill-percentage">70%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 70%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Vue.js<i class="skill-percentage">30%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 30%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-container">
+              <h3 class="stack-title">BackEnd</h3>
+              <div class="progress">
+                <span>Node.js<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Spring<i class="skill-percentage">50%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 50%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Django<i class="skill-percentage">60%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 60%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Elixir<i class="skill-percentage">40%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 40%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>GraphQL<i class="skill-percentage">60%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-stack-container">
+            <div class="stack-container">
+              <h3 class="stack-title">Linguagens</h3>
+              <div class="progress">
+                <span>Javascript<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Typescript<i class="skill-percentage">90%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 90%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Java<i class="skill-percentage">80%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 80%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Python<i class="skill-percentage">70%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 70%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>C++<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-container">
+              <h3 class="stack-title">Ferramentas</h3>
+              <div class="progress">
+                <span>Git<i class="skill-percentage">100%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Linux<i class="skill-percentage">80%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 80%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>AWS<i class="skill-percentage">60%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 60%"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span>Google Cloud<i class="skill-percentage">40%</i></span>
+                <div class="progress-container">
+                  <div class="skill-bar" style="--percentage: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section resume">
+        <h2 class="section-title">Curriculo</h2>
+
+        Exponho aqui minha formação academica e experiências profissionais.
+
+        <div data-aos="fade-up" class="resume-container">
+          <div>
+            <h3 class="resume-title">Educação</h3>
+            <div class="resume-item">
+              <h4>Engenharia da Computação</h4>
+              <h5>2019 - Presente</h5>
+              <p><em>Universidade Federal do Ceará, Campus Sobra, CE</em></p>
+              <p>Campus Sobral, Ceará</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Engenharia da Computação</h4>
+              <h5>2017 - 2018</h5>
+              <p>
+                <em>Universidade Federal do Ceará, Campus Quixadá, CE</em>
+              </p>
+              <p>Campus Quixadá, Ceará</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Técnico em Redes de Computadores</h4>
+              <h5>2014 - 2016</h5>
+              <p><em>EEEP Marta Maria Giffoni de Sousa, Acaraú, CE</em></p>
+              <p></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Ensino Médio</h4>
+              <h5>2014 - 2016</h5>
+              <p><em>EEEP Marta Maria Giffoni de Sousa, Acaraú, CE</em></p>
+              <p></p>
+            </div>
+          </div>
+          <div>
+            <h3 class="resume-title">Experiencia Profissional</h3>
+            <div class="resume-item">
+              <h4>Bolsista do CNpq</h4>
+              <h5>Jul 2019 - Presente</h5>
+              <p><em>Universidade Federal do Ceará, Campus Sobral</em></p>
+              <p>
+                Detecção de Covid-19 em imagens de tomografia computadorizadas
+                de pulmão, em parceria com o HR (Hospital Regional)
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Bolsista de Iniciação Academica</h4>
+              <h5>Ago 2018 - Mai 2019</h5>
+              <p><em>Universidade Federal do Ceará, Campus Sobral</em></p>
+              <p>
+                Criação de cenas em 3D utilizando Blender, para o Museu do
+                Eclipse e Planetário de Sobral
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Bolsista de Iniciação Academica</h4>
+              <h5>Mar 2017 - Dez 2017</h5>
+              <p><em>Universidade Federal do Ceará, Campus Quixadá, CE</em></p>
+              <p>
+                Organização de Minicursos relacionado a Desenvolvimento de
+                Sistemas Embarcados e Software Livre, para apoio a permanencia a
+                Universidade
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Estágio - Atena Desing</h4>
+              <h5>Jun 2016 - Nov 2016</h5>
+              <p><em>Acaraú, CE</em></p>
+              <p>
+                Desenvolvimento Web (Full Stack) com Java, Primefaces e Banco de
+                Dados MySQL
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section portfolio">
+        <h2 class="section-title">Portfolio</h2>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Contato</h2>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/main.js"></script>
+</html>
