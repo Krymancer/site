@@ -171,6 +171,7 @@ a {
 .section {
   background: var(--light-background);
   padding: 5em;
+  padding: 2em 5em 0 5em;
 }
 
 .section-title {
@@ -364,6 +365,9 @@ a {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume {
+  height: 100%;
+}
 
 .resume-title {
   font-size: 1.2em;
@@ -374,20 +378,17 @@ a {
 .resume-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 3em;
 }
 
 .resume-container > div {
-  margin-bottom: 5em;
   width: 100%;
 }
 
 .resume-item {
   padding: 0 0 1em 1em;
-  margin-top: 1em;
   border-left: 2px solid #1f5297;
   position: relative;
-  margin-bottom: -2em;
+  margin-bottom: -1.3em;
 }
 
 .resume-item h4 {
@@ -424,3 +425,7 @@ a {
   background: #fff;
   border: 2px solid #1f5297;
 }
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/

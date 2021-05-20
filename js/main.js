@@ -15,8 +15,7 @@ const typed = new Typed('.home-label-text', options);
 // Scroll Spy
 let section = document.querySelectorAll("section");
 const skillSection = document.getElementById("skills");
-const skillSectionIndex = 2;
-
+skillSectionOffset = 400;
 const skillsBars = document.getElementsByClassName('skill-bar');
 let sections = {};
 let i = 0;
@@ -37,7 +36,7 @@ window.onscroll = function () {
     for (i in sections) {
         if (sections[i] <= scrollPosition) {
 
-            if (skillSection.offsetTop <= scrollPosition) {
+            if (skillSection.offsetTop <= scrollPosition + skillSectionOffset) {
                 Array.prototype.forEach.call(skillsBars, function (e) {
                     e.classList.remove('paused');
                     e.classList.add('play');
