@@ -429,3 +429,26 @@ a {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  height: 100%;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-thumb {
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
+
+.project-thumb:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.portfolio-link {
+  color: --var(--menu-text-highlight);
+}
