@@ -452,3 +452,72 @@ a {
 .portfolio-link {
   color: --var(--menu-text-highlight);
 }
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact {
+  height: 100%;
+}
+
+.contact-container {
+  margin-bottom: 2em;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact-form .contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 1em;
+}
+
+.contact-form label {
+  padding-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 14px;
+}
+
+.contact-form input {
+  height: 44px;
+}
+
+.contact-form textarea {
+  padding: 10px 15px;
+  height: 5em;
+}
+
+.contact-form button[type="submit"] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-right: 1em;
+}
+
+.contact-form button[type="submit"]:hover {
+  background: #37b3ed;
+}
